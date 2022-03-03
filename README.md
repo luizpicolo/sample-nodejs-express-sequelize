@@ -1,2 +1,2 @@
-# Skeleton NodeJS + ExpressJS
-Repositório base para projetos NodeJS + ExpressJS
+# Skeleton NodeJS + ExpressJS + Sequelize
+Repositório base para projetos NodeJS + ExpressJS + Sequelize
