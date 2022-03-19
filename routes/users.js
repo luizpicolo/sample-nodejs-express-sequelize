@@ -4,13 +4,27 @@ const { User } = require('../app/models');
 
 //Listar todos
 router.get('/', async (req, res) => {
+  console.log("Listar")
   const users = await User.findAll();
   res.json(users);
 }); 
 
-router.post('/', (req, res) => {}); // Criar
-router.get('/:id', (req, res) => {}); //Buscar
-router.put('/:id', (req, res) => {}); //Editar
-router.delete('/:id', (req, res) => {}); //Deletar
+// Criar
+router.post('/', (req, res) => {
+  console.log("Criar")
+  res.json(req.body.nome)
+}); 
+
+//Editar
+router.put('/:id', (req, res) => {
+  console.log("Editar " + req.params.id)
+  res.json(req.body.nome)
+}); 
+
+//Deletar
+router.delete('/:id', (req, res) => {
+  console.log("Deletar " + req.params.id)
+  res.json(req.body.nome)
+}); 
 
 module.exports = router;
